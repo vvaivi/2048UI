@@ -1,0 +1,33 @@
+COMP.CS.110 Programming 2
+Project 4: 2048 GUI
+
+Description:
+This program contains an 2048 game with graphic user interface. The goal of this game is to combine number tiles on the game board to reach the goal value. The game board contains numbers that are powers of two. Combining two tiles that has the same number will result in one tile with the next higher power of two. Player wins if they are able to combine the tiles enough to reach the goal value. Player loses if the boad is filled with numbers at any point of the game (there are no tiles with the value zero left). 
+
+Class mainwindow handles the user interface of the game. It consists of the game board grid, which is implemented with labels. There are also spin boxes that allow the user to select a seed value and a goal number. These and the bonus feature selections must be done before starting the game and can be reselected when the game is reseted. There are default values set for these, so the user can start the game without changing settings. There are push buttons on the interface which allow user to move the game board, start and reset the game and close the mainwindow. The game board cannot be moved before starting the game.
+
+Bonus features:
+
+1. Numbers on the game board are replaced with pictures. Most of the pictures represent cakes and the number of candles on them the power of two for the number in tile. Number zero is a picture of a cake slize and power eleven as a default winning number is a gift box. Also the push buttons that enable moving the game board have pictures on them.
+
+2. It is not possible to choose a goal number that is not power of two. This is implemented using a spin box for selecting the power. Default value for goal number is 2048 (11th power) according to the original game. Lowest possible goal value is four.
+
+3. The background color of the interface turns green when player wins the game and red when loses. It changes back to default when reset button is clicked.
+
+4. The game can be paused by clicking the pause button and restarted at the same stage by clicking it again. When paused, the game board can not be moved or any setting changed. The user is informed about pause with a text in the text browser. Also timer is stopped when paused.
+
+5. There is a score counting in this game. It is similar to the original version of this game. The user's score starts at zero, and is increased whenever two tiles combine by the value of the new tile.
+
+6. There is an all time score board. The user can type their nickname on the line edit in right bottom corner of the interface. Only letters from a to z and numbers are allowed in the name. If anything else is imputted, the incorrect characters are removed from the name. If the user decides not to imput a nickname, their score will be shown with name "Guest" on the board. The same name can appear multiple times on the score board, so if you want to stand out make sure to select a personal nick. The scores are saved when player wins or loses or clicks reset button. Score will not be saved if you close the window during the game. The scores are shown form highest to lowest in the text browser on the right side of the interface. 
+
+7. Player can select an interval for deleting a number on the game board. For example, if you select 2 from the spin box a value is deleted every second move. If you select zero, numbers will not be removed. The value to delete is selected randomly. The removed number can never be zero and the deleted value is replaced with a tile with zero value. Default value for this is zero. 
+
+8. There is a timer that shows how much time has been spent playing. It stops when game ends or is reseted. Reseting and starting a new game sets the value back to zero. 
+
+Program author:
+
+ * Name: Aino Viskari
+ * Student number: 50621950
+ * UserID: vvaivi
+ * E-Mail: aino.viskari@tuni.fi
+
